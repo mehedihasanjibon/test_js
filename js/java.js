@@ -223,3 +223,19 @@ jibon!";
 let i1 = "john";
 let i2 = new String("john");
 document.getElementById("demo29").innerHTML = typeof i1 + "<br>" + typeof i2;
+
+
+// js methods
+
+const i3 = {
+    name: "Bangladesh",
+    districts: 64,
+};
+const i4 = "Bangladesh";
+console.log(i4.length);
+
+let str = "Apple, Banana, Kiwi";
+console.log(str.slice(7,13));
+
+let str2 = "Apple, Banana, Kiwi";
+console.log(str2.slice(-12, -6));
