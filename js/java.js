@@ -267,3 +267,25 @@ let lan1 = "Hello";
 let lan2 = "concat";
 let lan3 = lan1.concat(" " , lan2);
 document.getElementById("concat").innerHTML = lan3
+
+
+// trimstart
+let trm1 = "    Hello java world     ";
+let trm2 = trm1.trimStart();
+document.getElementById("trim").innerHTML = "lenght text1= " + trm1.length + " <br> lenght.text2= " + trm2.length; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
