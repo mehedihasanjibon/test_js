@@ -306,6 +306,9 @@ document.getElementById("demo31").innerHTML = text4.indexOf("locate");
 let last = "Please locate where 'locate' occurs!";
 document.getElementById("demo32").innerHTML = last.lastIndexOf("where");
 
+let ser = "Mehedi hasan jibon chowdhury";
+document.getElementById("demo33").innerHTML = ser.search("jibon");
+
 
 
 
