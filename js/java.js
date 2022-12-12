@@ -112,4 +112,11 @@ document.getElementById("demo20").innerHTML = h + "<br>" + h1;
 let h2 = 5;
 let h3 = 5;
 let h4 = 6;
-document.getElementById("demo21").innerHTML = (h2 == h3) + "<br>" + (h2 == h4)
+document.getElementById("demo21").innerHTML = (h2 == h3) + "<br>" + (h2 == h4);
+
+// the typeof
+var tst = 5;
+var tst1 = 4;
+var tst2 = 3;
+var myObject = {tst:5, tst1:4, tst2:3};
+console.log(typeof myObject);
