@@ -357,6 +357,19 @@ let j1 = 1;
 let sentence = `I love ${country} and it's population is ${j + j1} crore`;
 document.getElementById("demo44").innerHTML = sentence;
 
+// variable Substitutions
+
+let firstName = "sabiha";
+let lastName = "nil";
+let Name = `welcome ${firstName}, ${lastName}!`;
+document.getElementById("demo45").innerHTML = Name;
+
+// Expression Substitution
+let price = 10;
+let vat = 0.25;
+let total = `total: ${price * (1 + vat).toFixed(2)}`;
+document.getElementById("demo46").innerHTML = total;
+
 
 
 
