@@ -83,11 +83,20 @@ f--;
 let f1 = f;
 document.getElementById("demo14").innerHTML = f1;
 
+// assignment
 let f2 = 10;
 f2 += 5;
 document.getElementById("demo15").innerHTML = f2;
 
+// Data type
+let f3 = 45 + 5 + "volvo";
+document.getElementById("demo16").innerHTML = f3;
 
+let f4 = "Mehedi" + 2 + 2;
+document.getElementById("demo17").innerHTML = f4;
 
-
+let g;
+g = 5;
+g = "hasan";
+document.getElementById("demo18").innerHTML = g;
 
