@@ -287,7 +287,17 @@ let cAt1 = "hello java";
 console.log(cAt1.charAt(500));
 console.log(cAt1.charAt[500]);
 
+// split()
+let texts = "Hello world";
+console.log(texts.split(","));
 
+let test = "Hello";
+const myArr = test.split("");
+test = "";
+for (let i = 0; i < myArr.length; i++){
+    test += myArr[i] + "<br>";
+}
+document.getElementById("split").innerHTML = test;
 
 
 
