@@ -36,3 +36,21 @@ var a = 5;
 var b = 5;
 var c = a + b;
 document.getElementById("demo8").innerHTML = "The value of z is: " + c;
+
+// js let
+let a1 = 7;
+if(true){
+    let a1 = 6;
+    console.log(a1);
+};
+console.log(a1);
+
+let b1 = 2;
+{
+    let b1 = 2;
+};
+document.getElementById("demo9").innerHTML = b1;
+
+carName = "volvo";
+var carName;
+console.log(carName);
