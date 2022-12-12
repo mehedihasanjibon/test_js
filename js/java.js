@@ -324,6 +324,12 @@ let text7 = "the rain is SPAIN stays mainly in the plain";
 const myArr3 = text7.match(/ain/gi);
 document.getElementById("demo36").innerHTML = myArr3.length + " " + myArr3;
 
+// includes()
+let inc = "Hello world, welcome to the universe.";
+document.getElementById("demo37").innerHTML = inc.includes("world");
+
+let inc1 = "Hello world, welcome to the unicerse";
+document.getElementById("demo38").innerHTML = inc1.includes("world" , 12);
 
 
 
