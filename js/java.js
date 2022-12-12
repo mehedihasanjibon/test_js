@@ -120,3 +120,24 @@ var tst1 = 4;
 var tst2 = 3;
 var myObject = {tst:5, tst1:4, tst2:3};
 console.log(typeof myObject);
+
+// JS Function
+function sleep(){
+    console.log("Sabiha is sleeping from 10 pm");
+}
+sleep();
+console.log("My name is jibon");
+
+function sleep(name){
+    console.log(name + " is sleeping from 8pm");
+}
+sleep("Mehedi");
+sleep("MOsharof");
+sleep("Mosha");
+
+function sleep(name , time){
+    console.log(name + " is sleeping from " +time);
+}
+sleep("jahid" , "7pm");
+sleep("Munna" , "6pm");
+sleep("shaon" , "5pm");
