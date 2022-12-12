@@ -26,8 +26,13 @@ console.log("Hello world");
 document.getElementById("demo5").innerHTML = "Hello Dolly";
 console.log(6);
 console.log(5); 
-document.write("Hello");
+document.write("Hello");    
 
 
 document.getElementById("demo6").innerHTML = (5+6) * 10;
 document.getElementById("demo7").innerHTML = "Mh" + " " + "Jibon"; 
+
+var a = 5;
+var b = 5;
+var c = a + b;
+document.getElementById("demo8").innerHTML = "The value of z is: " + c;
