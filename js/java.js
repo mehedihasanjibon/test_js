@@ -197,4 +197,3 @@ console.log(cars.weight);
 console.log(cars['name']);
 cars.start();
 
-
