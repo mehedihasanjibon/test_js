@@ -205,3 +205,15 @@ function displayDate(){
 
 let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 console.log(text.length);
+
+// escape charcter
+let text1 = "We are the so-called \"Vikings\" from the north";
+console.log(text1);
+
+
+let text2 = 'It\'s alright.';
+console.log(text2);
+
+let text3 = "The character \\ is called backlash";
+console.log(text3);
+
