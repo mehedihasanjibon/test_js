@@ -61,3 +61,26 @@ const num = 10;
     const num = 2
 }
 document.getElementById("demo10").innerHTML = num;
+
+// operators
+let c1 = 5;
+let d = 2;
+let e = c1 + d;
+document.getElementById("demo11").innerHTML = "the sum is c1 + d is: " + e;
+
+let d1 = 10;
+d1 += 7;
+document.getElementById("demo12").innerHTML = d1;
+
+let e1 = 5 +5;
+let e2 = "5" + 5;
+let e3 = "Hello" + 5;
+document.getElementById("demo13").innerHTML = e1 + "<be>" + e2 + "<br>" + e3;
+
+
+
+
+
+
+
+
