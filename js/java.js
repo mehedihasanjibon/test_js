@@ -217,3 +217,9 @@ console.log(text2);
 let text3 = "The character \\ is called backlash";
 console.log(text3);
 
+document.getElementById("demo28").innerHTML = "Hello\
+jibon!";
+
+let i1 = "john";
+let i2 = new String("john");
+document.getElementById("demo29").innerHTML = typeof i1 + "<br>" + typeof i2;
