@@ -154,3 +154,47 @@ document.getElementById("demo23").innerHTML = i;
 function Myfunction3(a, b){
     return a * b;
 }
+
+let carNames = "BMW";
+function myfunction4(){
+    let carNames = "volvo";
+    console.log(carNames);
+}
+console.log(carNames);
+myfunction4();
+
+// Object
+
+const car = {
+    type: "fiat" ,
+    model: 500,
+    color: "white",
+}
+document.getElementById("demo24").innerHTML = "The car type is " + car.type;
+
+const person = {
+    firstName: "Mh",
+    lastName: "jibon",
+    age: 22,
+    eyeColor: "blue",
+};
+
+document.getElementById("demo25").innerHTML = person.firstName + " is " + person.age + " years old";
+
+const cars = {
+    name: "Fiat", 
+    model: 500,
+    weight: "white",
+    start: function(){
+        this.drive();
+        console.log("car has started");
+    },
+    drive: function(){
+        console.log("car is driving");
+    },
+};
+console.log(cars.weight);
+console.log(cars['name']);
+cars.start();
+
+
