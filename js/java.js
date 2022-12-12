@@ -100,3 +100,16 @@ g = 5;
 g = "hasan";
 document.getElementById("demo18").innerHTML = g;
 
+let g1 = 22.00;
+let g2 = 34;
+let g3 = 22.342;
+document.getElementById("demo19").innerHTML = g1 + "<br>" + g2 + "<br>" + g3;  
+
+let h = 1234;
+let h1 = 123-4;
+document.getElementById("demo20").innerHTML = h + "<br>" + h1;
+
+let h2 = 5;
+let h3 = 5;
+let h4 = 6;
+document.getElementById("demo21").innerHTML = (h2 == h3) + "<br>" + (h2 == h4)
