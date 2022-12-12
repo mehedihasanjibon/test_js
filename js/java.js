@@ -331,6 +331,16 @@ document.getElementById("demo37").innerHTML = inc.includes("world");
 let inc1 = "Hello world, welcome to the unicerse";
 document.getElementById("demo38").innerHTML = inc1.includes("world" , 12);
 
+// startsWith()
+let start = "Hello world, welcome to the unicerse";
+document.getElementById("demo39").innerHTML = start.startsWith("Hello");
+
+// endswith method
+let end = "Mehedi hasan";
+document.getElementById("demo40").innerHTML = end.endsWith("hasan");
+
+let endsec = "Hello world, welcome to the universe.";
+document.getElementById("demo41").innerHTML = endsec.endsWith("world" , 11);
 
 
 
