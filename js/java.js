@@ -303,6 +303,8 @@ document.getElementById("split").innerHTML = test;
 let text4 = "Please locate where 'locate' occurs!";
 document.getElementById("demo31").innerHTML = text4.indexOf("locate");
 
+let last = "Please locate where 'locate' occurs!";
+document.getElementById("demo32").innerHTML = last.lastIndexOf("where");
 
 
 
