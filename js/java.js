@@ -141,3 +141,16 @@ function sleep(name , time){
 sleep("jahid" , "7pm");
 sleep("Munna" , "6pm");
 sleep("shaon" , "5pm");
+
+// return
+function mybtn3(){
+    return "Hello return";
+}
+document.getElementById("demo22").innerHTML = mybtn3();
+
+let i = Myfunction3(15, 5);
+document.getElementById("demo23").innerHTML = i;
+
+function Myfunction3(a, b){
+    return a * b;
+}
