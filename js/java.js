@@ -83,6 +83,10 @@ f--;
 let f1 = f;
 document.getElementById("demo14").innerHTML = f1;
 
+let f2 = 10;
+f2 += 5;
+document.getElementById("demo15").innerHTML = f2;
+
 
 
 
