@@ -260,3 +260,10 @@ function ourfunction2(){
     let lw = document.getElementById("lower").innerHTML;
     document.getElementById("lower").innerHTML = lw.toLowerCase();
 }
+
+// concat
+
+let lan1 = "Hello";
+let lan2 = "concat";
+let lan3 = lan1.concat(" " , lan2);
+document.getElementById("concat").innerHTML = lan3
