@@ -342,6 +342,9 @@ document.getElementById("demo40").innerHTML = end.endsWith("hasan");
 let endsec = "Hello world, welcome to the universe.";
 document.getElementById("demo41").innerHTML = endsec.endsWith("world" , 11);
 
+let bt = `Hello java`;
+document.getElementById("demo42").innerHTML = bt;
+
 
 
 
