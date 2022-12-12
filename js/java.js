@@ -54,3 +54,10 @@ document.getElementById("demo9").innerHTML = b1;
 carName = "volvo";
 var carName;
 console.log(carName);
+
+// js const
+const num = 10;
+{
+    const num = 2
+}
+document.getElementById("demo10").innerHTML = num;
