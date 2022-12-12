@@ -299,6 +299,9 @@ for (let i = 0; i < myArr.length; i++){
 }
 document.getElementById("split").innerHTML = test;
 
+// indexof
+let text4 = "Please locate where 'locate' occurs!";
+document.getElementById("demo31").innerHTML = text4.indexOf("locate");
 
 
 
