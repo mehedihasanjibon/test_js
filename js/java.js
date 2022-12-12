@@ -345,6 +345,12 @@ document.getElementById("demo41").innerHTML = endsec.endsWith("world" , 11);
 let bt = `Hello java`;
 document.getElementById("demo42").innerHTML = bt;
 
+let multi = `The quick
+brown fox
+jumps over
+the lazy dog.`;
+document.getElementById("demo43").innerHTML = multi;
+
 
 
 
