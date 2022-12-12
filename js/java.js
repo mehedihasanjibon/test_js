@@ -77,8 +77,11 @@ let e2 = "5" + 5;
 let e3 = "Hello" + 5;
 document.getElementById("demo13").innerHTML = e1 + "<be>" + e2 + "<br>" + e3;
 
-
-
+// arithmetic
+let f = 5;
+f--;
+let f1 = f;
+document.getElementById("demo14").innerHTML = f1;
 
 
 
