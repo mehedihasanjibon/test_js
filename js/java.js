@@ -279,6 +279,14 @@ let end1 = "        Hello java trimend      ";
 let end2 = end1.trimEnd();
 document.getElementById("trimend").innerHTML = "lenght text1= " + end1.length + "<br> lenght text2= " + end2.length;
 
+// charAt
+let cAt = "Hello java";
+document.getElementById("char").innerHTML = cAt.charAt(0);
+
+let cAt1 = "hello java";
+console.log(cAt1.charAt(500));
+console.log(cAt1.charAt[500]);
+
 
 
 
