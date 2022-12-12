@@ -303,11 +303,27 @@ document.getElementById("split").innerHTML = test;
 let text4 = "Please locate where 'locate' occurs!";
 document.getElementById("demo31").innerHTML = text4.indexOf("locate");
 
+//lastindexof
 let last = "Please locate where 'locate' occurs!";
 document.getElementById("demo32").innerHTML = last.lastIndexOf("where");
 
+// search()method
 let ser = "Mehedi hasan jibon chowdhury";
 document.getElementById("demo33").innerHTML = ser.search("jibon");
+
+// match
+let text5 = "the rain is SPAIN stays mainly in the plain";
+const myArr1 = text5.match("ain");
+document.getElementById("demo34").innerHTML = myArr1; 
+
+let text6 = "the rain is SPAIN stays mainly in the plain";
+const myArr2 = text6.match(/ain/g);
+document.getElementById("demo35").innerHTML = myArr2.length + " " + myArr2;
+
+let text7 = "the rain is SPAIN stays mainly in the plain";
+const myArr3 = text7.match(/ain/gi);
+document.getElementById("demo36").innerHTML = myArr3.length + " " + myArr3;
+
 
 
 
