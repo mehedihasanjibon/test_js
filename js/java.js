@@ -200,3 +200,8 @@ cars.start();
 function displayDate(){
     document.getElementById("demo27").innerHTML = Date();
 }
+
+// js strings
+
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+console.log(text.length);
