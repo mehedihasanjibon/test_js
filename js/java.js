@@ -197,3 +197,6 @@ console.log(cars.weight);
 console.log(cars['name']);
 cars.start();
 
+function displayDate(){
+    document.getElementById("demo27").innerHTML = Date();
+}
