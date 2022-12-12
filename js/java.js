@@ -251,4 +251,12 @@ function myfunt() {
     document.getElementById("demo30").innerHTML = text.replace("Microsoft", "w3schools");
 };
 
+function ourfunction(){
+    let upe = document.getElementById("upper").innerHTML;
+    document.getElementById("upper").innerHTML = upe.toUpperCase();
+}
 
+function ourfunction2(){
+    let lw = document.getElementById("lower").innerHTML;
+    document.getElementById("lower").innerHTML = lw.toLowerCase();
+}
