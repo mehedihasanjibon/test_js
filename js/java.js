@@ -239,3 +239,16 @@ console.log(str.slice(7,13));
 
 let str2 = "Apple, Banana, Kiwi";
 console.log(str2.slice(-12, -6));
+
+// Replacing string content
+let str3 = "I love sabiha";
+let nil = str3.replace("sabiha" , "nil");
+
+console.log("nil");
+
+function myfunt() {
+    let text = document.getElementById("demo30").innerHTML;
+    document.getElementById("demo30").innerHTML = text.replace("Microsoft", "w3schools");
+};
+
+
