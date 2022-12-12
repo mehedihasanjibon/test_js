@@ -351,6 +351,11 @@ jumps over
 the lazy dog.`;
 document.getElementById("demo43").innerHTML = multi;
 
+let country = "Bangladesh";
+let j = 17;
+let j1 = 1;
+let sentence = `I love ${country} and it's population is ${j + j1} crore`;
+document.getElementById("demo44").innerHTML = sentence;
 
 
 
