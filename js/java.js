@@ -370,10 +370,14 @@ let vat = 0.25;
 let total = `total: ${price * (1 + vat).toFixed(2)}`;
 document.getElementById("demo46").innerHTML = total;
 
-
+// floating precision
 let flo = 0.2 + 0.1;
 document.getElementById("demo48").innerHTML = "0.2 + 0.1 = " + flo;
 
+// to solve the problem above, it helps to multiply and divide
+
+let flo1 = (0.2 * 10 + 0.1 * 10) / 10;
+document.getElementById("demo49").innerHTML = "0.2 + 0.1 = " + flo1;
 
 
 
