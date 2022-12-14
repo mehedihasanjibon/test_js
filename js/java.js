@@ -374,10 +374,16 @@ document.getElementById("demo46").innerHTML = total;
 let flo = 0.2 + 0.1;
 document.getElementById("demo48").innerHTML = "0.2 + 0.1 = " + flo;
 
-// to solve the problem above, it helps to multiply and divide
-
+// to solve the problem above, it helps to multiply and divide.
 let flo1 = (0.2 * 10 + 0.1 * 10) / 10;
 document.getElementById("demo49").innerHTML = "0.2 + 0.1 = " + flo1;
+
+// Numeric strings
+let nmr = "100";
+let nmr1 = 10;
+let nmr2 = nmr / nmr1;
+document.getElementById("demo50").innerHTML = nmr2;
+
 
 
 
