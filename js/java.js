@@ -371,7 +371,8 @@ let total = `total: ${price * (1 + vat).toFixed(2)}`;
 document.getElementById("demo46").innerHTML = total;
 
 
-
+let flo = 0.2 + 0.1;
+document.getElementById("demo48").innerHTML = "0.2 + 0.1 = " + flo;
 
 
 
