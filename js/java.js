@@ -391,6 +391,9 @@ let b2 = 10;
 console.log(isNaN(a2));
 console.log(isNaN(b2));
 
+// typeof nan
+let d2 = NaN;
+document.getElementById("demo51").innerHTML = typeof d2;
 
 
 
