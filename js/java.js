@@ -395,7 +395,9 @@ console.log(isNaN(b2));
 let d2 = NaN;
 document.getElementById("demo51").innerHTML = typeof d2;
 
-
+// Hexadecimal
+let k = 0xff;
+document.getElementById("demo52").innerHTML = "0xff= " + k;
 
 
 
