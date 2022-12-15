@@ -380,10 +380,16 @@ document.getElementById("demo49").innerHTML = "0.2 + 0.1 = " + flo1;
 
 // Numeric strings
 let nmr = "100";
-let nmr1 = 10;
+let nmr1 = "10";
 let nmr2 = nmr / nmr1;
 document.getElementById("demo50").innerHTML = nmr2;
 
+// NaN -not a Number
+let a2 = "10";
+let b2 = 10;
+
+console.log(isNaN(a2));
+console.log(isNaN(b2));
 
 
 
