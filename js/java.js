@@ -416,6 +416,9 @@ document.getElementById("demo53").innerHTML = ex.toExponential() + "<br>" + ex.t
 let fix = 9.656;
 document.getElementById("demo54").innerHTML = fix.toFixed() + "<br>" + fix.toFixed(2) + "<br>" + fix.toFixed(4) + "<br>" + fix.toFixed(6);
 
+// the toPrecision() method
+let pre = 9.656;
+document.getElementById("demo55").innerHTML = pre.toPrecision() + "<br>" + pre.toPrecision(2) + "<br>" + pre.toPrecision(4) + "<br>" + pre.toPrecision(6);
 
 
 
