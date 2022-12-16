@@ -425,7 +425,8 @@ document.getElementById("demo55").innerHTML = pre.toPrecision() + "<br>" + pre.t
 let val = 123;
 document.getElementById("demo56").innerHTML = val.valueOf() + "<br>" + (123).valueOf() + "<br>" + (100 + 23).valueOf();
 
-
+// The parseInt() method
+console.log(parseInt("10 20 30"));
 
 
 
