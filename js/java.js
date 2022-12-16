@@ -410,3 +410,21 @@ console.log(m.toExponential(2));
 
 let ex = 9.656;
 document.getElementById("demo53").innerHTML = ex.toExponential() + "<br>" + ex.toExponential(2) + "<br>" + ex.toExponential(4) + "<br>" + ex.toExponential(6);
+
+// the toFixed() method 
+
+let fix = 9.656;
+document.getElementById("demo54").innerHTML = fix.toFixed() + "<br>" + fix.toFixed(2) + "<br>" + fix.toFixed(4) + "<br>" + fix.toFixed(6);
+
+
+
+
+
+
+
+
+
+
+
+
+
