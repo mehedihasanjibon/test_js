@@ -399,5 +399,12 @@ document.getElementById("demo51").innerHTML = typeof d2;
 let k = 0xff;
 document.getElementById("demo52").innerHTML = "0xff= " + k;
 
+// js Number method
+let x = 123;
+let newN = x.toString();
+console.log(typeof newN);
+
+
+
 
 
