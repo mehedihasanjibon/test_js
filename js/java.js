@@ -400,11 +400,13 @@ let k = 0xff;
 document.getElementById("demo52").innerHTML = "0xff= " + k;
 
 // js Number method
-let x = 123;
-let newN = x.toString();
+let l = 123;
+let newN = l.toString();
 console.log(typeof newN);
 
+// the toExponential() method 
+let m = 96500000000;
+console.log(m.toExponential(2));
 
-
-
-
+let ex = 9.656;
+document.getElementById("demo53").innerHTML = ex.toExponential() + "<br>" + ex.toExponential(2) + "<br>" + ex.toExponential(4) + "<br>" + ex.toExponential(6);
