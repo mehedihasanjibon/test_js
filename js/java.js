@@ -421,6 +421,9 @@ let pre = 9.656;
 document.getElementById("demo55").innerHTML = pre.toPrecision() + "<br>" + pre.toPrecision(2) + "<br>" + pre.toPrecision(4) + "<br>" + pre.toPrecision(6);
 
 
+// The valueOf() Method
+let val = 123;
+document.getElementById("demo56").innerHTML = val.valueOf() + "<br>" + (123).valueOf() + "<br>" + (100 + 23).valueOf();
 
 
 
