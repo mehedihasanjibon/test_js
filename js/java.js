@@ -428,7 +428,10 @@ document.getElementById("demo56").innerHTML = val.valueOf() + "<br>" + (123).val
 // The parseInt() method
 console.log(parseInt("10 20 30"));
 
-
+// js number properties
+// the EPSILON property
+let eps = Number.EPSILON;
+document.getElementById("demo57").innerHTML = eps;
 
 
 
