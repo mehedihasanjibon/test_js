@@ -441,6 +441,9 @@ console.log(max.MAX_VALUE);
 let min = Number.MIN_VALUE;
 console.log(min);
 
+// the max_safe_integer
+let safe = Number.MAX_SAFE_INTEGER;
+console.log(safe);
 
 
 
