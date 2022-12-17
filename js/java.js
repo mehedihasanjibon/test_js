@@ -445,5 +445,9 @@ console.log(min);
 let safe = Number.MAX_SAFE_INTEGER;
 console.log(safe);
 
+// POSITIVE_INFINITY
+let positive = 1 / 0;
+console.log(positive);
+
 
 
