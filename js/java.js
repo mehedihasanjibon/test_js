@@ -449,5 +449,9 @@ console.log(safe);
 let positive = 1 / 0;
 console.log(positive);
 
+// NEGATIVE_INFINITY
+let negative = -1 / 0;
+console.log(negative);
+
 
 
