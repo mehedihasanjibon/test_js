@@ -437,6 +437,9 @@ document.getElementById("demo57").innerHTML = eps;
 let max = 6;
 console.log(max.MAX_VALUE);
 
+// The min_value
+let min = Number.MIN_VALUE;
+console.log(min);
 
 
 
