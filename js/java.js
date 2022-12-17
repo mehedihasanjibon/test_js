@@ -433,6 +433,9 @@ console.log(parseInt("10 20 30"));
 let eps = Number.EPSILON;
 document.getElementById("demo57").innerHTML = eps;
 
+// the MAX_VALUE property
+let max = 6;
+console.log(max.MAX_VALUE);
 
 
 
