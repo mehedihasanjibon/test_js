@@ -453,5 +453,19 @@ console.log(positive);
 let negative = -1 / 0;
 console.log(negative);
 
+// ja arrays
+const carr = [
+    "saab",
+    "volvo",
+    "BMW"
+];
+document.getElementById("demo58").innerHTML = carr;
+
+const carr1 = [];
+carr1[0] = "saab";
+carr1[1] = "volvo";
+carr1[2] = "BMW";
+document.getElementById("demo59").innerHTML = carr1;
+
 
 
