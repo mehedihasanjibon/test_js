@@ -480,8 +480,16 @@ document.getElementById("demo61").innerHTML = carr3
 const fruits = ["Banana" , "Orange" , "Apple" , "Mango"];
 document.getElementById("demo62").innerHTML = fruits[fruits.length-1];
 
+const fruit1 = ["Banana" , "Orange" , "Apple" , "Mango"];
+fruit1[4]= "Pineapple";
+console.log(fruit1[fruit1.length - 1]);
 
+// Looping array element
+const personx = ["Mehedi" , "Rafi" , "Mosharof" , "Munna"];
 
+for(i = 0; i < personx.length; i++){
+    console.log(personx[i]);
+}
 
 
 
