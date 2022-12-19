@@ -471,3 +471,21 @@ document.getElementById("demo59").innerHTML = carr1;
 const carr2 = ["saab", "volvo" , "BMW"];
 document.getElementById("demo60").innerHTML = carr2[1];
 
+// changing an array element
+const carr3 = ["saab" , "volvo" , "BMW"];
+carr3[0] = "Opel";
+document.getElementById("demo61").innerHTML = carr3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
