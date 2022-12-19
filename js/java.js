@@ -508,7 +508,13 @@ function mypush(){
     document.getElementById("demo64").innerHTML = fruit2;
 }
 
+const fruit3 = ["Apple" , " orange" , "Banana"];
+document.getElementById("demo65").innerHTML = fruit3;
 
+function myleng(){
+    fruit3[fruit3.length] = "Mango";
+    document.getElementById("demo65").innerHTML = fruit3;
+}
 
 
 
