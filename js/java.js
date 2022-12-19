@@ -467,5 +467,7 @@ carr1[1] = "volvo";
 carr1[2] = "BMW";
 document.getElementById("demo59").innerHTML = carr1;
 
-
+// accessing array element
+const carr2 = ["saab", "volvo" , "BMW"];
+document.getElementById("demo60").innerHTML = carr2[1];
 
