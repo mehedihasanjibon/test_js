@@ -497,3 +497,17 @@ function myfor(value){
     console.log(value);
 }
 fruitx.forEach(myfor);
+
+// adding array element 
+const fruit2 = ["Banana" , "orange" , "apple"];
+document.getElementById("demo65").innerHTML = fruit2;
+
+function mypush(){
+    fruit2.push("Lemon");
+    document.getElementById("demo65").innerHTML = fruit2;   
+}
+
+
+
+
+// push and length element 
