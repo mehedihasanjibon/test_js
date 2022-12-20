@@ -475,3 +475,7 @@ document.getElementById("demo60").innerHTML = carr2[1];
 const carr3 = ["saab" , "volvo" , "BMW"];
 carr3[0] = "opel";
 document.getElementById("demo61").innerHTML = carr3;
+
+// accessing the last array element 
+const fruits = ["Banana" , "Orange" , "Apple" , "Mango"];
+document.getElementById("demo62").innerHTML = fruits[fruits.length - 1];
