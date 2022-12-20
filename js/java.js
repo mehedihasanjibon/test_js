@@ -489,3 +489,11 @@ const personx = ["Mehedi" , "Rafi" , "Mosharof" , "Munna"];
 for (i = 0; i <= personx.length; i++){
     console.log(personx[i]);
 }
+
+// ForEach() array element 
+const fruitx = ["Banana" , "orange" , "apple" , "mango"];
+
+function myfor(value){
+    console.log(value);
+}
+fruitx.forEach(myfor);
