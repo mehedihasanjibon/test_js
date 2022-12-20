@@ -453,7 +453,7 @@ console.log(positive);
 let negative = -1 / 0;
 console.log(negative);
 
-// ja arrays
+// js arrays
 const carr = [
     "saab",
     "volvo",
@@ -466,58 +466,4 @@ carr1[0] = "saab";
 carr1[1] = "volvo";
 carr1[2] = "BMW";
 document.getElementById("demo59").innerHTML = carr1;
-
-// accessing array element
-const carr2 = ["saab", "volvo" , "BMW"];
-document.getElementById("demo60").innerHTML = carr2[1];
-
-// changing an array element
-const carr3 = ["saab" , "volvo" , "BMW"];
-carr3[0] = "Opel";
-document.getElementById("demo61").innerHTML = carr3
-
-// accessing the last array element
-const fruits = ["Banana" , "Orange" , "Apple" , "Mango"];
-document.getElementById("demo62").innerHTML = fruits[fruits.length-1];
-
-const fruit1 = ["Banana" , "Orange" , "Apple" , "Mango"];
-fruit1[4]= "Pineapple";
-console.log(fruit1[fruit1.length - 1]);
-
-// Looping array element
-const personx = ["Mehedi" , "Rafi" , "Mosharof" , "Munna"];
-
-for(i = 0; i < personx.length; i++){
-    console.log(personx[i]);
-}
-
-// ForEach() array element
-const fruitx = ["banana" , "apple" , "orange" , "mango"];
-
-function myfor(value){
-    console.log(value);
-}
-fruitx.forEach(myfor);
-
-// push and length element
-const fruit2 = ["banana" , "orange" , "Apple"];
-document.getElementById("demo64").innerHTML = fruit2;
-
-function mypush(){
-    fruit2.push("Lemon");
-    document.getElementById("demo64").innerHTML = fruit2;
-}
-
-const fruit3 = ["Apple" , " orange" , "Banana"];
-document.getElementById("demo65").innerHTML = fruit3;
-
-function myleng(){
-    fruit3[fruit3.length] = "Mango";
-    document.getElementById("demo65").innerHTML = fruit3;
-}
-
-
-
-
-
 
