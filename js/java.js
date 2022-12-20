@@ -507,7 +507,11 @@ function mypush(){
     document.getElementById("demo65").innerHTML = fruit2;   
 }
 
-
-
-
 // push and length element 
+const fruit3 = ["Banana" , "orange" , "apple"];
+document.getElementById("demo66").innerHTML = fruit3;
+
+function mylen(){
+    fruit3[fruit3.length] = "Lemon";
+    document.getElementById("demo66").innerHTML = fruit3;
+}
