@@ -479,3 +479,13 @@ document.getElementById("demo61").innerHTML = carr3;
 // accessing the last array element 
 const fruits = ["Banana" , "Orange" , "Apple" , "Mango"];
 document.getElementById("demo62").innerHTML = fruits[fruits.length - 1];
+
+const fruit1 = ["Banana" , "Orange" , "Apple" , "mango"];
+fruit1[4] = "Pineapple";
+console.log(fruit1[fruit1.length - 1]);
+
+// Looping array element
+const personx = ["Mehedi" , "Rafi" , "Mosharof" , "Munna"];
+for (i = 0; i <= personx.length; i++){
+    console.log(personx[i]);
+}
