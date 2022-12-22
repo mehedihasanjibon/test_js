@@ -571,3 +571,7 @@ document.getElementById("demo80").innerHTML = fruit10;
 const person3 = ["Mahin" , "Mehedi" , "Hasan" , "Jibon" , "Chowdhury"];
 const citrus = person3.splice(1,3);
 document.getElementById("demo81").innerHTML = person3 + "<br><br>" + citrus;
+
+// automatic toString
+const person4 = ["Mahin" , "Mehedi" , "hasan" , "jibon"];
+document.getElementById("demo82").innerHTML = person4;
