@@ -561,3 +561,8 @@ document.getElementById("demo78").innerHTML = fruit8;
 const fruit9 = ["Banana" , "Apple" , "Orange" , "Mango"];
 fruit9.splice(2,2 , "Lemon" , "Kiwi");
 document.getElementById("demo79").innerHTML = fruit9;
+
+// Using splice() Remove Element    
+const fruit10 = ["Banana" , "Orange" , "Apple" , "Mango"];
+fruit10.splice(0,1);
+document.getElementById("demo80").innerHTML = fruit10;
