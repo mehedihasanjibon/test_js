@@ -515,3 +515,13 @@ function mylen(){
     fruit3[fruit3.length] = "Lemon";
     document.getElementById("demo66").innerHTML = fruit3;
 }
+
+// arrays to tostring
+const fruit4 = ["Apple" , "Orange" , "Banana" , "Mango"];
+document.getElementById("demo67").innerHTML = fruit4.toString();
+
+
+
+
+
+
