@@ -566,3 +566,8 @@ document.getElementById("demo79").innerHTML = fruit9;
 const fruit10 = ["Banana" , "Orange" , "Apple" , "Mango"];
 fruit10.splice(0,1);
 document.getElementById("demo80").innerHTML = fruit10;
+
+// array slice
+const person3 = ["Mahin" , "Mehedi" , "Hasan" , "Jibon" , "Chowdhury"];
+const citrus = person3.splice(1,3);
+document.getElementById("demo81").innerHTML = person3 + "<br><br>" + citrus;
