@@ -528,6 +528,9 @@ document.getElementById("demo68").innerHTML = fruit5.join(" * ");
 const fruit6 = ["Pineapple" , "Banana" , "Orange"];
 document.getElementById("demo69").innerHTML = fruit6.pop();
 
+// pushing
+const fruit7 =["Orange" , "Pineapple" , "Apple"];
+document.getElementById("demo70").innerHTML = fruit7.push("Kiwi");
 
 
 
