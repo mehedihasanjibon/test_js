@@ -552,3 +552,12 @@ const car2 = ["Volvo" , "BMW" , "Hero" , "Suzuki"];
 document.getElementById("demo76").innerHTML = "The first car is: " + car2[3];
 delete car2[3];
 document.getElementById("demo77").innerHTML = "The 2nd car is: " + car2[3];
+
+// Splicing an Array   
+const fruit8 = ["Banana" , "Apple" , "Orange" , "Mango"];
+fruit8.splice(2, 0 , "Lemon" , "Kiwi");
+document.getElementById("demo78").innerHTML = fruit8; 
+
+const fruit9 = ["Banana" , "Apple" , "Orange" , "Mango"];
+fruit9.splice(2,2 , "Lemon" , "Kiwi");
+document.getElementById("demo79").innerHTML = fruit9;
