@@ -537,4 +537,7 @@ const person1 = ["Mehedi" , "MOsharof" , "Mahin" , "Rafi"];
 document.getElementById("demo71").innerHTML = person1.shift();
 document.getElementById("demo72").innerHTML = person1;
 
-
+// array unshift
+const person2 = ["Mehedi" , "Mosharof" , "Mahin" , "Rafi"];
+document.getElementById("demo73").innerHTML = person2.unshift("Jahid");
+document.getElementById("demo74").innerHTML = person2;
