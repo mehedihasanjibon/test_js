@@ -532,5 +532,9 @@ document.getElementById("demo69").innerHTML = fruit6.pop();
 const fruit7 =["Orange" , "Pineapple" , "Apple"];
 document.getElementById("demo70").innerHTML = fruit7.push("Kiwi");
 
+// shifting Element
+const person1 = ["Mehedi" , "MOsharof" , "Mahin" , "Rafi"];
+document.getElementById("demo71").innerHTML = person1.shift();
+document.getElementById("demo72").innerHTML = person1;
 
 
