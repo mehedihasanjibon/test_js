@@ -520,6 +520,9 @@ function mylen(){
 const fruit4 = ["Apple" , "Orange" , "Banana" , "Mango"];
 document.getElementById("demo67").innerHTML = fruit4.toString();
 
+// join()
+const fruit5 = ["Banana" , "Apple" , "Orange" , "Mango"];
+document.getElementById("demo68").innerHTML = fruit5.join(" * ");
 
 
 
