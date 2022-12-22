@@ -546,3 +546,9 @@ document.getElementById("demo74").innerHTML = person2;
 const car1 = ["Volvo" , "BMW" , "Hero"];
 car1[car1.length] = "Suzuki";
 document.getElementById("demo75").innerHTML = car1;
+
+// Deleting Element
+const car2 = ["Volvo" , "BMW" , "Hero" , "Suzuki"];
+document.getElementById("demo76").innerHTML = "The first car is: " + car2[3];
+delete car2[3];
+document.getElementById("demo77").innerHTML = "The 2nd car is: " + car2[3];
