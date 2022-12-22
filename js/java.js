@@ -541,3 +541,8 @@ document.getElementById("demo72").innerHTML = person1;
 const person2 = ["Mehedi" , "Mosharof" , "Mahin" , "Rafi"];
 document.getElementById("demo73").innerHTML = person2.unshift("Jahid");
 document.getElementById("demo74").innerHTML = person2;
+
+// changing Element
+const car1 = ["Volvo" , "BMW" , "Hero"];
+car1[car1.length] = "Suzuki";
+document.getElementById("demo75").innerHTML = car1;
