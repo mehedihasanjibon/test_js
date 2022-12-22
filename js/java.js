@@ -524,6 +524,9 @@ document.getElementById("demo67").innerHTML = fruit4.toString();
 const fruit5 = ["Banana" , "Apple" , "Orange" , "Mango"];
 document.getElementById("demo68").innerHTML = fruit5.join(" * ");
 
+// popping and pushing
+const fruit6 = ["Pineapple" , "Banana" , "Orange"];
+document.getElementById("demo69").innerHTML = fruit6.pop();
 
 
 
