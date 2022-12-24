@@ -581,3 +581,9 @@ document.getElementById("demo82").innerHTML = person4;
 // sorting an array
 const fruiter = ["Banana" , "orange" , "Apple" , "Mango"];
 document.getElementById("demo83").innerHTML = fruiter.sort();
+
+// Reversing an array
+const fruitsr = ["Banana" , "Orange" , "Apple" , "Mango"];
+fruitsr.sort();
+fruitsr.reverse();
+document.getElementById("demo84").innerHTML = fruitsr;
