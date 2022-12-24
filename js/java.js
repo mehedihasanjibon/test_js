@@ -621,6 +621,14 @@ points4.sort(function(a,b){
 });
 console.log(points4[0]);
 
+// using Math.max() on an array
+const points5 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo85").innerHTML = "The highest number is: " + myArrayMax(points5);
+
+function myArrayMax(arr){
+    return Math.max.apply(null , arr);
+}
+
 
 
 
