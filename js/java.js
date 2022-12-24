@@ -587,3 +587,25 @@ const fruitsr = ["Banana" , "Orange" , "Apple" , "Mango"];
 fruitsr.sort();
 fruitsr.reverse();
 document.getElementById("demo84").innerHTML = fruitsr;
+
+// Numeric sort 
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a,b){
+    return a - b;
+})
+console.log(points);
+
+const points1 = [40, 100, 1, 5, 25, 10];
+points1.sort(function(a , b){
+    return b -a;
+})
+console.log(points1);
+
+
+
+
+
+
+
+
+
