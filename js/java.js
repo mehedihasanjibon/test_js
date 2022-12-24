@@ -516,6 +516,7 @@ function mylen(){
     document.getElementById("demo66").innerHTML = fruit3;
 }
 
+// js array methods
 // arrays to tostring
 const fruit4 = ["Apple" , "Orange" , "Banana" , "Mango"];
 document.getElementById("demo67").innerHTML = fruit4.toString();
@@ -575,3 +576,8 @@ document.getElementById("demo81").innerHTML = person3 + "<br><br>" + citrus;
 // automatic toString
 const person4 = ["Mahin" , "Mehedi" , "hasan" , "jibon"];
 document.getElementById("demo82").innerHTML = person4;
+
+
+// sorting an array
+const fruiter = ["Banana" , "orange" , "Apple" , "Mango"];
+document.getElementById("demo83").innerHTML = fruiter.sort();
