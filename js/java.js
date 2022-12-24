@@ -592,14 +592,22 @@ document.getElementById("demo84").innerHTML = fruitsr;
 const points = [40, 100, 1, 5, 25, 10];
 points.sort(function (a,b){
     return a - b;
-})
+});
 console.log(points);
 
 const points1 = [40, 100, 1, 5, 25, 10];
 points1.sort(function(a , b){
     return b -a;
-})
+});
 console.log(points1);
+
+// sorting an array in Random order
+const points2 = [40, 100, 1, 5, 25, 10];
+points2.sort(function(a ,b){
+    return 0.5 - Math.random();
+});
+console.log(points2);
+
 
 
 
