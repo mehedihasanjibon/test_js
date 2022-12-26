@@ -637,6 +637,25 @@ function myArrayMin(arr){
     return Math.min.apply(null , arr);
 }
 
+// sorting object arrays
+const cars1 = [
+    {type:"volvo", year:2016},
+    {type:"Saab", year:2001},
+    {type:"BMW", year:2010}
+];
+
+displayCars1();
+
+cars1.sort(function(a,b){return a.year - b.year});
+displayCars1();
+
+function displayCars1() {
+    document.getElementById("demo88").innerHTML = 
+    cars1[0].type + " " + cars1[0].year + "<br>" + 
+    cars1[1].type + " " + cars1[1].year + "<br>" +
+    cars1[2].type + " " + cars1[2].year;
+}
+
 
 
 
