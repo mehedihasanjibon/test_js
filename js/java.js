@@ -656,6 +656,31 @@ function displayCars1() {
     cars1[2].type + " " + cars1[2].year;
 }
 
+const carer = [
+    {type:"volvo" , year:2016},
+    {type:"Saab" , year:2001},
+    {type:"BMQ" , year:2010},
+];
+
+displayCarer();
+function myFuntions1(){
+    carer.sort(function(a , b){
+        let x = a.type.toLowerCase();
+        let y = b.type.toLowerCase();
+        if(x < y){return - 1};
+        if(x > y){return 1};
+        return 0 ;
+    });
+    displayCarer();
+}
+
+function displayCarer(){
+    document.getElementById("demo89").innerHTML = 
+    carer[0].type + " " + carer[0].year + "<br>" +
+    carer[1].type + " " + carer[1].year + "<br>" +
+    carer[2].type + " " + carer[2].year;
+}
+
 
 
 
