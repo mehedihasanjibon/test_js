@@ -15,3 +15,6 @@ function mybtn(){
 function mybtn2(){
     document.getElementById("demo4").innerHTML = "change paragraph";
 }
+
+document.getElementById("demo6").innerHTML = (6+5) * 10;
+document.getElementById("demo7").innerHTML = "Mh" + " " + "Jibon";
