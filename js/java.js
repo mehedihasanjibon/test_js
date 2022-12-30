@@ -18,3 +18,8 @@ function mybtn2(){
 
 document.getElementById("demo6").innerHTML = (6+5) * 10;
 document.getElementById("demo7").innerHTML = "Mh" + " " + "Jibon";
+
+var x = 5;
+var y = 5;
+var z = x + y;
+document.getElementById("demo8").innerHTML = "The value of z is:" + z;
