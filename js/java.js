@@ -7,3 +7,7 @@ function myfunction(){
 function myfunction2(){
     document.getElementById("demo2").style.display = "none";
 }
+
+function mybtn(){
+    document.getElementById("demo3").style.display = "block";
+}
