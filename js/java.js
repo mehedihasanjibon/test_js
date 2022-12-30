@@ -11,3 +11,7 @@ function myfunction2(){
 function mybtn(){
     document.getElementById("demo3").style.display = "block";
 }
+
+function mybtn2(){
+    document.getElementById("demo4").innerHTML = "change paragraph";
+}
