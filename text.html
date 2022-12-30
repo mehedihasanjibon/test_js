@@ -9,7 +9,6 @@
 </head>
 <body>
     <h1> Hello javascript </h1>
-    <p id="demo"> </p>
 
     <button type="button" onclick="document.getElementById('myimg').src = 'imgs/pic_bulbon.gif'"> Turn on the light </button>
     <img id="myimg" src="imgs/pic_bulboff.gif" alt="">
@@ -60,9 +59,25 @@
 
     <!-- js variables -->
     <p id="demo8"> </p>
+
+    <!-- js let  -->
     <script> 
-        
+        let b = 7;
+        if(true){
+            let b = 6;
+            console.log(b)
+        }
+        console.log(b);
     </script>
+    <p id="demo9"> </p>
+    <script>
+        let a = 10;
+        {
+            let a = 2;
+        }
+        document.getElementById("demo9").innerHTML = a;
+    </script>
+   
 
 
     <script src="js/java.js"> </script>

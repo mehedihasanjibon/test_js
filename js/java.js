@@ -1,5 +1,3 @@
-document.getElementById("demo").innerHTML = "Hello java";
-
 function myfunction(){
     document.getElementById("demo1").style.fontSize = "45px";
 }
@@ -23,3 +21,23 @@ var x = 5;
 var y = 5;
 var z = x + y;
 document.getElementById("demo8").innerHTML = "The value of z is:" + z;
+
+// let js  
+// let x = 7; 
+// if(true){
+//     let x = 6;
+//     console.log(x)
+// }
+// console.log(x);
+
+
+carName = "Volvo"
+var carName;
+console.log(carName);
+
+const c = 10;
+{
+    const c = 2
+}
+console.log(c);
+
