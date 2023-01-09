@@ -60,6 +60,27 @@
             /* display: none; */
             visibility: hidden;
         }
+
+        /* custom text  */
+        :root{
+            --primary-color:#4b0acf;
+            --secondary-color:lightgray;
+            --single-border: 2px solid blueviolet;
+        }
+        h2{
+            color: var(--primary-color);
+        }
+        .border{
+            border-bottom: var(--single-border);
+        }
+        .text-2{
+            background-color: var(--primary-color);
+            width: calc(100% - 20%);
+            height: 100px;
+        }
+        .pond{
+            background-color: var(--secondary-color);
+        }
     </style>
 </head>
 <body>
@@ -246,6 +267,18 @@
         <h3> Box-3 </h3>
      </div>
 
+     <!-- custom text  -->
+     <h2 class="heading" id="heading-1"> My strong heading-1 </h2>
+     <h2 class="heading" id="heading-2"> My strong heading-2 </h2>
+     <h2 class="heading" id="heading-3"> My strong heading-3 </h2>
+     <h2 class="heading" id="heading-4"> My strong heading-4 </h2>
+     <p class="border"> My simple talk </p>
+     <div class="text-2">
+        <h3> My boxing box </h3>
+     </div>
+     <div class="pond">
+        <p> This is my paragraph </p>
+     </div>
 
 </body> 
 </html>
