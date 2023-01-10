@@ -4,497 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document html & css external elements </title>
-    <script src="https://kit.fontawesome.com/e392829b18.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="js/java.js">
+    <title> Responsive website </title>
 
     <style>
-        table{
-            text-align: center;
-            border-collapse: collapse;
-            margin: 50px auto;
-        }
-        th, td{
-            border: 1px solid red;
-            padding: 5px 15px;
-            width: 150px;
-        }
-
-
-        .section{
-            background-color: bisque;
-            border-bottom: 5px solid #361414;
-            border-radius: 10px;
-            width: 50%;;
-            margin: 20px;
-            padding: 40px 80px 100px 100px;
-        }
-        .text{
-            font-weight: bold;
-            font-style: italic;
-        }
-
-        nav ul{
-            display: flex;
-        }
-        nav li{
-            list-style: none;
-            margin-right: 10px;
-            padding: 0 5px;
-        }
-        nav li:hover{
-            background-color: lightgray;
-        }
-        nav li a{
-            text-decoration: none;
-            color: black;
-        }
-
-        /* visibility  */
-        .box{
-            width: 150px;
-            height: 150px;
-            border: 2px solid rebeccapurple;
-        }
-        #box-2{
-            color: peru;
-            /* display: none; */
-            visibility: hidden;
-        }
-
-        /* custom text  */
-        :root{
-            --primary-color:#4b0acf;
-            --secondary-color:lightgray;
-            --single-border: 2px solid blueviolet;
-        }
-        h2{
-            color: var(--primary-color);
-        }
-        .border{
-            border-bottom: var(--single-border);
-        }
-        .text-2{
-            background-color: var(--primary-color);
-            width: calc(100% - 20%);
-            height: 100px;
-        }
-        .pond{
-            background-color: var(--secondary-color);
-        }
-
-        /* animation  */
-        @keyframes sliding{
-            0%{
-                background-color: yellow;
-                left: 0;
-                top: 0;
-            }
-            25%{
-                top: 225px;
-                background-color: red;
-                transform: scale(0.5);
-            }
-            50%{
-                top: 0;
-                background-color: yellow;
-                transform: scale(1);
-            }
-            75%{
-                top: 225px;
-                background-color: red;
-                transform: scale(0.5);
-            }
-            100%{
-                background-color: yellow;
-                left: 600px;
-                top: 0;
-            }
-        }
-        .stage{
-            width: 700px;
-            height: 300px;
-            background-color: lightskyblue;
-        }
-        .ball{
-            width: 100px;
-            height: 100px;
-            background-color: limegreen;
-            border-radius: 50%;
-            position: relative;
-            animation: sliding 2s ease-in-out 0.5s infinite alternate;
-            animation-play-state: running;
-        }
-
-        /* cricket */
-        .field{
-            margin-top: 20px;
-            margin-bottom: 150px;
-            border: 1px solid;
-        }
-        .ball-2{
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            border-radius: 25px;
-            position: relative;
-            left: 515px;
-            transition: transform 1s ease-out 0.3s;
-        }
-        .field:hover .ball-2{
-            transform: translate(750px, -100px);
-        }
-        .bat{
-            transition: transform 0.2s ease-in;
-        }
-        .field:hover .bat{
-            transform: rotate(-60deg);
-            transform-origin: top right;
-        }
-
-        .calendar{
+        .container{
             display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: 30px repeat(5, 75px);
-            row-gap: 20px;
-            column-gap: 10px;
-        }
-        .date, .day{
-            background-color: #87ceeb;
-            display: flex;
-            font-size: 2em;
-            justify-content: center;
-            align-items: center;
-            border-radius: 7px;
-        }
-        .other-month, .day{
-            background-color: lightgray;
-        }
-        .day{
-            font-size: 1.5em;
-        }
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
 
-        .login-container{
-            display: flex;
-            justify-content: center;
-            margin-top: 100px;
         }
-        .login-form{
-            display: flex;
-            flex-direction: column;
-            width: 50%;
+        .food{
+            border: 2px solid burlywood;
+            border-radius: 10px;
+            padding: 15px;
         }
-        .login-form input{
-            margin-top: 1em;
-            font-size: 1.5em;
-            padding: 5px 10px;
+        .food img{
+            width: 75%;
         }
-        .login-form input[type="submit"]{
-            background-color: goldenrod;
-            border: 0;
-            border-radius: 5px;
-            color: whitesmoke;
-            font-weight: 700;
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
-
-        .menu{
-            display: flex;
-            justify-content: space-between;
-        }
-        .menu a{
-            text-decoration: none;
-            color: black;
-            margin-right: 10px;
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     
-    <p> This is my paragraph </p>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, temporibus. </p>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iusto aspernatur possimus illum quisquam velit quaerat quam eveniet accusantium quas! </p>
-
-    <h1> this is my heading </h1>
-    <h2> this is my heading </h2>
-    <h3> this is my heading </h3>
-    <h4> this is my heading </h4>
-    <h5> this is my heading </h5>
-    <h6> this is my heading </h6>
-
-    <!-- anchor -->
-    <a href="https://www.w3schools.com/" target="_blank"> Click here </a>
-    <br><br>
-    <a href="https://developer.mozilla.org/" target="_blank"> chack the box shadow</a>
-    <br><br>
-    <img src="imgs/IMG_20220315_120000_612.jpg" alt="this is my picture" width="400px">
-    <img src="imgs/IMG_20220812_134039_446 (2).jpg" alt="this is pic" width="400px">
-    <p> images for local file  </p>
-
-    <!-- list tag -->
-    <p> list item </p>
-    <li> Borani </li>
-    <li> khaila buma </li>
-    <li> lassi </li>
-    <p>----------------</p>
-    <h3> Unordered list: Grocery </h3>
-    <ul> 
-        <li> Rice </li>
-        <li> Vegetables </li>
-        <li> onion </li>
-        <li> salt 
-            <ul>
-                <li> Molla salt </li>
-                <li> ac pura salt </li>
-                <li> ph pura salt </li>
-            </ul>    
-        </li>
-    </ul>
-
-    <p>----------------</p>
-    <h3> Ordered list </h3>
-    <ol> 
-        <li> Liton das </li>
-        <li> Sakib al hasan </li>
-        <li> Mushfiq </li>
-        <li> Bowler 
-            <ol>
-                <li> Mustafiz </li>
-                <li> tashkin </li>
-                <li> Rubel </li>
-            </ol>
-        </li>
-    </ol>
-
-    <div> 
-        <h3> my Blog </h3>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, laboriosam. </p>
-        <img src="imgs/pic_bulboff.gif" width="100px" alt="">
+    <div class="container">
+        <div class="food">
+            <img src="imgs/IMG_20220315_120000_612.jpg" alt="">
+            <h2>item-1</h2>
+            <h4>price: 100</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laborum quasi dolorum quidem eos, soluta eveniet aliquid ut perferendis doloribus quaerat voluptatem labore, blanditiis sunt sequi quibusdam dolorem esse nisi?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/IMG_20220812_134039_446 (2).jpg" alt="">
+            <h2>item-2</h2>
+            <h4>price: 200</h4>
+            <p>Iure nobis nemo qui rem hic quisquam, ad veniam asperiores officiis explicabo maxime maiores nam, tenetur similique itaque neque in blanditiis repudiandae eos mollitia quo libero error pariatur praesentium! Aperiam!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/IMG-20220107-WA0000 (1).jpg" alt="">
+            <h2>item-3</h2>
+            <h4>price: 300</h4>
+            <p>Aliquam consequuntur velit minus natus atque modi, nulla asperiores beatae! Similique voluptates architecto eaque unde rem labore distinctio ad, velit accusamus, quam sequi perspiciatis expedita, sunt error in dolores. Vel.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/pic_bulboff.gif" alt="">
+            <h2>item-4</h2>
+            <h4>price: 400</h4>
+            <p>Ea perspiciatis, at magni alias laudantium ullam veniam obcaecati laborum minima dicta quasi. Neque aliquid facere quidem itaque nisi at alias sunt, eveniet dolores molestiae nobis placeat aperiam eligendi cumque.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/pic_bulbon.gif" alt="">
+            <h2>item-5</h2>
+            <h4>price: 500</h4>
+            <p>Rem esse sapiente cum at deserunt, mollitia odit alias minus cumque temporibus maiores nostrum, quod expedita id illo vel enim ad suscipit. Atque error doloribus facilis in beatae asperiores? Tempore!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/bat.png" alt="">
+            <h2>item-6</h2>
+            <h4>price: 600</h4>
+            <p>Facilis placeat eos, enim cum unde quae, culpa necessitatibus recusandae sequi esse est fugiat, error labore. Ipsam totam, eligendi dolorum hic voluptates, eius porro quos expedita, nobis tenetur et quis.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/2385856.png" alt="">
+            <h2>item-7</h2>
+            <h4>price: 700</h4>
+            <p>Quod hic facilis nostrum iusto adipisci modi, eius iste, dicta molestias sunt, iure ea deleniti dolore? Impedit alias cupiditate ut est itaque commodi! Totam velit, sunt maxime amet ab iusto.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/IMG_20220315_120000_612.jpg" alt="">
+            <h2>item-8</h2>
+            <h4>price: 800</h4>
+            <p>Suscipit harum vel iusto magnam inventore sunt fugiat sequi fuga, sapiente culpa laudantium rem ipsa ratione nisi. Magni, sit asperiores repellendus veritatis quasi, ad natus velit sunt, quas at id.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/IMG_20220315_120000_612.jpg" alt="">
+            <h2>item-9</h2>
+            <h4>price: 900</h4>
+            <p>Dolores a, nostrum amet mollitia cum, nesciunt ipsa est non vero quis et eos! Vel aut, voluptatibus, placeat maiores corporis accusamus rem qui quibusdam perspiciatis nihil, reiciendis animi unde ratione.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/IMG_20220315_120000_612.jpg" alt="">
+            <h2>item-10</h2>
+            <h4>price: 1000</h4>
+            <p>Iste maxime suscipit aliquam. Adipisci numquam voluptas dolor? Voluptate, pariatur nesciunt similique, laboriosam accusantium molestiae itaque commodi, eveniet neque officiis tenetur est laudantium iste deserunt minus vel rem facere quam?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/IMG_20220315_120000_612.jpg" alt="">
+            <h2>item-11</h2>
+            <h4>price: 1100</h4>
+            <p>Doloremque, reiciendis ad asperiores libero expedita repudiandae velit, ipsam, cupiditate neque numquam soluta eaque debitis! Rerum, quisquam deserunt quia quae eos praesentium assumenda cupiditate qui excepturi numquam inventore molestiae vitae.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="imgs/IMG_20220315_120000_612.jpg" alt="">
+            <h2>item-12</h2>
+            <h4>price: 1200</h4>
+            <p>Vitae, voluptatem! Vel consectetur odit beatae maxime. Commodi debitis pariatur iste, temporibus cum quasi labore! Odio amet illum ab id repellat molestias ex numquam. Quam debitis delectus vero explicabo eligendi!</p>
+            <button>Order Now</button>
+        </div>
     </div>
 
-    <h3> audio and video </h3>
-
-    <audio src="media/Goat.mp3" controls> </audio>
-    <br><br>
-    <video src="media/file_example.mp4" controls></video>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rj0wDn5ZsVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-    <!-- simple blog section  -->
-     <header>
-        <nav>
-            <ul>
-                <li><a href="#"> Home </a></li>
-                <li><a href="#"> form  </a></li>
-                <li><a href="#"> Table </a></li>
-                <li><a href="#"> About </a></li>
-            </ul>
-        </nav>
-        <h2> Blog section </h2>
-     </header>
-
-     <main>
-        <section class="blogs">
-            <article>
-                <h2> This is my simple blog One </h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum nobis maiores nulla dicta quae repellendus iste magnam, a praesentium, iure ullam doloremque rerum voluptate alias maxime dolorum porro architecto explicabo! Perspiciatis veniam omnis ad quibusdam magnam vel libero, est voluptates placeat minima tempora consequatur ex obcaecati ab distinctio, nam ipsa minus dolores optio quidem corrupti tempore quas? Pariatur, quia. </p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi laboriosam ipsa, tempore eum ex quasi totam dolorum quibusdam officiis et repudiandae velit aperiam inventore officia quam provident consequatur vitae! </p>
-            </article>
-            <article>
-                <h2> This is my simple blog Two </h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum nobis maiores nulla dicta quae repellendus iste magnam, a praesentium, iure ullam doloremque rerum voluptate alias maxime dolorum porro architecto explicabo! Perspiciatis veniam omnis ad quibusdam magnam vel libero, est voluptates placeat minima tempora consequatur ex obcaecati ab distinctio, nam ipsa minus dolores optio quidem corrupti tempore quas? Pariatur, quia. </p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi laboriosam ipsa, tempore eum ex quasi totam dolorum quibusdam officiis et repudiandae velit aperiam inventore officia quam provident consequatur vitae! </p>
-            </article>
-        </section>
-        <section class="photo-ablum">
-            <div class="ablum"> 
-                <h3> Sajek blog </h3>
-            </div>
-            <div> 
-                <h3> Cox's bazar </h3>
-            </div>
-        </section>
-     </main>
-     <footer>
-        <p> 
-            <small> copyright of the year 2023 </small>
-        </p>
-     </footer>
-
-     <!-- table tag  -->
-     <h2> My table </h2>
-     <table>
-        <tr>
-            <th> No. </th>
-            <th> Name </th>
-            <th> Roll </th>
-            <th> Result </th>
-        </tr>
-        <tr>
-            <td> 01 </td>
-            <td> Mehedi </td>
-            <td> 168788 </td>
-            <td> A </td>
-        </tr>
-        <tr>
-            <td> 02 </td>
-            <td> Hasan </td>
-            <td> 168789 </td>
-            <td> A- </td>
-        </tr>
-        <tr>
-            <td> 03 </td>
-            <td> Rafi </td>
-            <td> 168734 </td>
-            <td> A- </td>
-        </tr>
-        <tr>
-            <td> 04 </td>
-            <td> Mosharof </td>
-            <td> 185633 </td>
-            <td> A </td>
-        </tr>
-     </table>
-
-     <div class="section">
-        <h3> This is my blog one </h3>
-        <p class="text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aperiam atque officiis quas, eos quos libero exercitationem ipsam accusamus id et dolores iusto. Perspiciatis ex quia corporis, modi atque obcaecati cum inventore soluta, fuga adipisci odio magni, vitae cupiditate possimus hic a animi veritatis fugit eaque qui reprehenderit praesentium mollitia. </p>
-     </div>
-     <div class="section">
-        <h3> this is my blog second </h3>
-        <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi assumenda iste repellendus vel, maiores explicabo laborum voluptate accusantium quis esse perferendis iusto ex sint alias, a delectus. Aut tempora, doloremque molestias deserunt alias in suscipit officia dolore veniam. Possimus aliquam praesentium incidunt voluptatem repudiandae excepturi porro quod! Eum, officia? </p>
-     </div>
-     <div class="section">
-        <h3> This is my blog third </h3>
-        <p class="text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio harum tempora, dicta fuga nam odio quidem recusandae repellendus necessitatibus. Nemo voluptatibus quo soluta nobis aperiam provident inventore. Atque iste blanditiis totam odit excepturi, rem quaerat eius magnam necessitatibus esse sed tempora est velit consequuntur minima praesentium vitae quas vero laudantium. </p>
-     </div>
-
-     <!-- navber tag -->
-     <header>
-        <nav>
-            <ul>
-                <li><a href="#"> Home </a></li>
-                <li><a href="#"> Form </a></li>
-                <li><a href="#"> Table </a></li>
-                <li><a href="#"> About </a></li>
-                <li><a href="#"> Media   </a></li>
-            </ul>
-        </nav>
-     </header>
-
-    <!-- visibility file  -->
-     <div class="box" id="box-1">
-        <h3> Box-1 </h3>
-     </div>
-     <div class="box" id="box-2">
-        <h3> Box-2 </h3>
-     </div>
-     <div class="box" id="box-3">
-        <h3> Box-3 </h3>
-     </div>
-
-     <!-- custom text  -->
-     <h2 class="heading" id="heading-1"> My strong heading-1 </h2>
-     <h2 class="heading" id="heading-2"> My strong heading-2 </h2>
-     <h2 class="heading" id="heading-3"> My strong heading-3 </h2>
-     <h2 class="heading" id="heading-4"> My strong heading-4 </h2>
-     <p class="border"> My simple talk </p>
-     <div class="text-2">
-        <h3> My boxing box </h3>
-     </div>
-     <div class="pond">
-        <p> This is my paragraph </p>
-     </div>
-     <br><br>
-
-     <!-- animation  -->
-     <h2> Let's explore animation </h2>
-     <div class="stage">
-        <div class="ball"> </div>
-     </div>
-
-     <!-- cricket -->
-     <div class="field">
-        <img class="bat" src="imgs/bat.png" alt="">
-        <div class="ball-2">
-
-        </div>
-     </div>
-
-     <h1> This is my calendar </h1>
-     <div class="calendar">
-        <div class="day"> S </div>
-        <div class="day"> M </div>
-        <div class="day"> T </div>
-        <div class="day"> W </div>
-        <div class="day"> T </div>
-        <div class="day"> F </div>
-        <div class="day"> S </div>
-        
-        <div class="date other-month">30</div>
-        <div class="date other-month">31</div>
-        <div class="date">1</div>
-        <div class="date">2</div>
-        <div class="date">3</div>
-        <div class="date">4</div>
-        <div class="date">5</div>
-        <div class="date">6</div>
-        <div class="date">7</div>
-        <div class="date">8</div>
-        <div class="date">9</div>
-        <div class="date">10</div>
-        <div class="date">11</div>
-        <div class="date">12</div>
-        <div class="date">13</div>
-        <div class="date">14</div>
-        <div class="date">15</div>
-        <div class="date">16</div>
-        <div class="date">17</div>
-        <div class="date">18</div>
-        <div class="date">19</div>
-        <div class="date">20</div>
-        <div class="date">21</div>
-        <div class="date">22</div>
-        <div class="date">23</div>
-        <div class="date">24</div>
-        <div class="date">25</div>
-        <div class="date">26</div>
-        <div class="date">27</div>
-        <div class="date">28</div>
-        <div class="date">29</div>
-        <div class="date">30</div>
-        <div class="date other-month">1</div>
-        <div class="date other-month">2</div>
-        <div class="date other-month">3</div>
-     </div>
-
-
-     <header>
-        <nav class="menu"> 
-            <span>
-                <a href=""> Home </a>
-            <a href=""> Dashboard </a>
-            <a href=""> Inventiry </a>
-            <a href=""> About </a>
-            <a href=""> Contact </a>
-            </span>
-
-            <span>
-                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
-                <a href=""><i class="fa-solid fa-user"></i></a>
-            </span>
-        </nav>
-     </header>
-     
-     <section class="login-container">
-        <form class="login-form">
-            <h2> Please Login </h2>
-            <input type="email" placeholder="Your Email" required>
-            <input type="password" placeholder="Your password" required>
-            <input type="submit" value="Login">
-        </form>
-     </section>
-
-
-
-</body> 
+</body>
 </html>
