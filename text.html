@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document html & css external elements </title>
+    <script src="https://kit.fontawesome.com/e392829b18.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="js/java.js">
 
     <style>
@@ -194,6 +195,16 @@
             border-radius: 5px;
             color: whitesmoke;
             font-weight: 700;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -455,6 +466,24 @@
         <div class="date other-month">2</div>
         <div class="date other-month">3</div>
      </div>
+
+
+     <header>
+        <nav class="menu"> 
+            <span>
+                <a href=""> Home </a>
+            <a href=""> Dashboard </a>
+            <a href=""> Inventiry </a>
+            <a href=""> About </a>
+            <a href=""> Contact </a>
+            </span>
+
+            <span>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </span>
+        </nav>
+     </header>
      
      <section class="login-container">
         <form class="login-form">
